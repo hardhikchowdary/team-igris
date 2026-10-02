@@ -1,0 +1,177 @@
+.skill-graph-page { --graph-ink: #26352b; --graph-muted: #7d8980; --graph-line: #e5ebe5; --graph-green: #287b58; color: var(--graph-ink); }
+.skill-graph-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 19px; }
+.skill-graph-heading h1 { margin-top: 7px; color: #29372e; font: 700 27px 'Manrope', sans-serif; }
+.skill-graph-subtitle { margin: 5px 0 0; color: #78847b; font-size: 12px; }
+.graph-heading-badge { display: inline-flex; align-items: center; gap: 7px; border: 1px solid #dfe9e0; border-radius: 5px; background: #f6faf6; padding: 7px 9px; color: #538062; font-size: 9px; font-weight: 600; }
+.graph-error { display: flex; align-items: center; gap: 9px; margin-bottom: 14px; border: 1px solid #f1d9ce; border-radius: 6px; background: #fff8f5; padding: 11px 13px; color: #975638; font-size: 10px; }
+.graph-error button { margin-left: auto; border: 1px solid #e8c7b8; border-radius: 4px; background: #fff; padding: 5px 9px; color: #925437; font-size: 9px; font-weight: 600; cursor: pointer; }
+.graph-employee-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 14px; border: 1px solid #e4eae4; border-radius: 8px; background: #fff; padding: 13px 16px; }
+.employee-selector-label { display: flex; align-items: center; gap: 10px; }
+.graph-section-index { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 7px; background: #eaf4ed; color: #34764d; font: 700 9px 'Manrope', sans-serif; }
+.employee-selector-label > span:last-child { display: grid; gap: 3px; }
+.employee-selector-label strong { color: #435148; font-size: 10px; font-weight: 700; }
+.employee-selector-label small { color: #919b92; font-size: 8px; }
+.employee-select-wrap { position: relative; display: flex; width: min(370px, 55%); height: 37px; align-items: center; border: 1px solid #dfe6df; border-radius: 5px; background: #fff; }
+.employee-select-wrap select { width: 100%; height: 100%; appearance: none; border: 0; outline: 0; background: transparent; padding: 0 34px 0 10px; color: #3c4b40; font: 600 10px 'DM Sans', sans-serif; cursor: pointer; }
+.employee-select-wrap > svg { position: absolute; right: 10px; color: #839087; pointer-events: none; }
+.employee-select-wrap select:focus-visible { outline: 2px solid #82ad89; outline-offset: 2px; border-radius: 4px; }
+.employee-profile-strip { display: flex; align-items: center; gap: 12px; margin-top: 12px; border: 1px solid #e1e9e1; border-radius: 8px; background: linear-gradient(100deg, #f0f7f0, #fff 64%); padding: 14px 16px; }
+.graph-profile-avatar { display: grid; width: 42px; height: 42px; flex: 0 0 auto; place-items: center; border: 1px solid #d8e6d9; border-radius: 11px; background: #e7f1e8; color: #478054; }
+.graph-profile-main { min-width: 0; }
+.graph-profile-name-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.graph-profile-name-row h2 { color: #2d3b31; font: 700 15px 'Manrope', sans-serif; }
+.graph-profile-main > p { margin: 4px 0 0; color: #78847b; font-size: 9px; }
+.graph-profile-main > p span { margin: 0 3px; color: #bac3bb; }
+.graph-availability { display: inline-flex; align-items: center; gap: 5px; border-radius: 10px; background: #f8f1e5; padding: 4px 7px; color: #95773d; font-size: 7px; }
+.graph-availability i { width: 5px; height: 5px; border-radius: 50%; background: #c6a04f; }
+.graph-availability.available { background: #eaf5ec; color: #477c51; }
+.graph-availability.available i { background: #4f9d66; }
+.graph-profile-details { display: flex; flex-wrap: wrap; gap: 12px; margin-left: auto; }
+.graph-profile-details > span { display: inline-flex; align-items: center; gap: 5px; color: #758178; font-size: 8px; }
+.graph-profile-details svg { color: #91a095; }
+.graph-summary-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
+.graph-summary-card { display: flex; min-width: 0; align-items: flex-start; gap: 8px; border: 1px solid #e7ece7; border-radius: 7px; background: #fff; padding: 10px 9px; }
+.summary-icon { display: grid; width: 27px; height: 27px; flex: 0 0 auto; place-items: center; border-radius: 7px; }
+.summary-icon.mint { background: #eaf4eb; color: #4c8158; }
+.summary-icon.green { background: #eaf4ef; color: #3b8165; }
+.summary-icon.yellow { background: #f8f2e5; color: #a17d3e; }
+.summary-icon.blue { background: #eaf2f5; color: #578093; }
+.summary-icon.purple { background: #f1eef6; color: #777293; }
+.graph-summary-card > div { display: grid; min-width: 0; gap: 2px; }
+.summary-label { overflow: hidden; color: #7d897f; font-size: 8px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.graph-summary-card strong { color: #344238; font: 700 17px 'Manrope', sans-serif; line-height: 1.15; }
+.graph-summary-card small { overflow: hidden; color: #9aa39b; font-size: 7px; text-overflow: ellipsis; white-space: nowrap; }
+.relationship-section, .employee-skills-detail { margin-top: 23px; }
+.graph-section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 14px; margin-bottom: 11px; }
+.graph-section-eyebrow { margin-bottom: 4px; color: #87958a; font-size: 8px; font-weight: 700; letter-spacing: .9px; }
+.graph-section-heading h2 { color: #2d3b31; font: 700 17px 'Manrope', sans-serif; }
+.graph-legend { display: flex; flex-wrap: wrap; gap: 11px; }
+.graph-legend span { display: inline-flex; align-items: center; gap: 4px; color: #829087; font-size: 7px; }
+.graph-legend i { width: 6px; height: 6px; border-radius: 50%; }
+.legend-strong { background: #438657; }
+.legend-developing { background: #c69a49; }
+.legend-missing { background: #ce7e61; }
+.relationship-board { display: grid; grid-template-columns: minmax(110px, .7fr) 14px minmax(155px, 1.05fr) 14px minmax(165px, 1.05fr) 14px minmax(180px, 1.2fr); align-items: stretch; gap: 7px; border: 1px solid #e5ebe5; border-radius: 9px; background: #f8faf8; padding: 12px; }
+.graph-stage { min-width: 0; border: 1px solid #e7ece7; border-radius: 7px; background: #fff; padding: 9px; }
+.graph-stage-heading { display: flex; min-height: 22px; align-items: center; gap: 5px; margin-bottom: 9px; color: #75907a; }
+.graph-stage-heading > span { display: grid; width: 16px; height: 16px; place-items: center; border-radius: 4px; background: #eff5ef; color: #69806b; font-size: 7px; font-weight: 700; }
+.graph-stage-heading > svg { flex: 0 0 auto; }
+.graph-stage-heading h3 { overflow: hidden; margin: 0; color: #58675b; font: 700 8px 'Manrope', sans-serif; text-overflow: ellipsis; white-space: nowrap; }
+.graph-employee-node { display: grid; justify-items: center; gap: 6px; padding: 11px 4px; text-align: center; }
+.employee-node-avatar { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid #d6e5d8; border-radius: 13px; background: #eaf4eb; color: #438055; font: 700 12px 'Manrope', sans-serif; }
+.graph-employee-node > strong { color: #405045; font-size: 9px; line-height: 1.35; }
+.graph-employee-node > span:not(.employee-node-avatar) { color: #78867c; font-size: 8px; line-height: 1.35; }
+.graph-employee-node > small { color: #98a199; font-size: 7px; line-height: 1.4; }
+.graph-flow-connector { position: relative; display: grid; place-items: center; color: #9eb5a0; }
+.graph-flow-connector::before { position: absolute; top: 50%; right: 0; left: 0; height: 1px; background: #d3e0d4; content: ''; }
+.graph-flow-connector svg:first-child { position: relative; z-index: 1; width: 15px; height: 15px; border-radius: 50%; background: #f8faf8; }
+.graph-flow-connector svg:last-child { display: none; }
+.graph-node-list { display: grid; align-content: start; gap: 6px; }
+.graph-skill-node { display: flex; min-width: 0; align-items: center; gap: 6px; border: 1px solid #e8eee8; border-radius: 5px; background: #fcfdfc; padding: 7px 6px; }
+.graph-node-status { width: 6px; height: 6px; flex: 0 0 auto; border-radius: 50%; }
+.graph-skill-node.strong .graph-node-status { background: #4a8c5d; }
+.graph-skill-node.developing .graph-node-status { background: #c49a4d; }
+.graph-skill-node-copy { display: grid; min-width: 0; flex: 1; gap: 3px; }
+.graph-skill-node-copy strong { overflow: hidden; color: #536257; font-size: 8px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.graph-skill-node-copy small { color: #929d93; font-size: 7px; }
+.graph-skill-node-copy > i { overflow: hidden; height: 3px; border-radius: 3px; background: #edf1ed; }
+.graph-skill-node-copy > i b { display: block; height: 100%; border-radius: inherit; background: #62946b; }
+.graph-skill-node.developing .graph-skill-node-copy > i b { background: #c4a05b; }
+.graph-skill-percent { flex: 0 0 auto; color: #819083; font: 600 7px 'Manrope', sans-serif; }
+.graph-project-node { min-width: 0; border: 1px solid #e7ece7; border-radius: 6px; background: #fff; padding: 7px; transition: border-color .15s ease, box-shadow .15s ease; }
+.graph-project-node:hover, .graph-role-node:hover { border-color: #c8ddcb; box-shadow: 0 3px 9px rgb(39 79 49 / 5%); }
+.project-node-heading { display: flex; align-items: flex-start; gap: 6px; }
+.project-node-icon { display: grid; width: 22px; height: 22px; flex: 0 0 auto; place-items: center; border-radius: 5px; background: #eaf2f5; color: #557f8e; }
+.project-node-heading > div { display: grid; min-width: 0; gap: 2px; }
+.project-node-heading strong { color: #526156; font-size: 7px; line-height: 1.4; }
+.project-node-heading small { color: #97a197; font-size: 6px; }
+.graph-project-node > p { margin: 6px 0; color: #839087; font-size: 7px; line-height: 1.45; }
+.project-contribution { display: grid; gap: 2px; border-top: 1px solid #f0f2f0; padding-top: 5px; color: #65796a; font-size: 7px; line-height: 1.4; }
+.project-contribution > span { color: #9ba49c; font-size: 6px; font-weight: 700; letter-spacing: .55px; }
+.project-skill-tags { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 6px; }
+.project-skill-tags > span { border-radius: 3px; background: #eff5ef; padding: 3px 4px; color: #64806a; font-size: 6px; }
+.project-skill-tags > small { color: #a0a8a0; font-size: 6px; }
+.graph-role-node { min-width: 0; border: 1px solid #e7ece7; border-radius: 6px; background: #fff; padding: 7px; transition: border-color .15s ease, box-shadow .15s ease; }
+.role-node-title { display: flex; align-items: flex-start; justify-content: space-between; gap: 4px; }
+.role-node-title > strong { color: #435248; font-size: 8px; line-height: 1.4; }
+.role-node-title > span { flex: 0 0 auto; color: #33784e; font: 700 10px 'Manrope', sans-serif; }
+.graph-role-node > small { display: block; margin-top: 3px; color: #98a198; font-size: 6px; }
+.role-compat-track { overflow: hidden; height: 4px; margin-top: 6px; border-radius: 4px; background: #edf1ed; }
+.role-compat-track i { display: block; height: 100%; border-radius: inherit; background: #62a06d; }
+.role-matched-skills, .role-missing-skills { display: flex; flex-wrap: wrap; align-items: center; gap: 3px; margin-top: 7px; }
+.role-skill-caption { width: 100%; color: #9aa39a; font-size: 6px; font-weight: 700; letter-spacing: .45px; }
+.role-match-chip, .role-gap-chip, .role-no-gaps { display: inline-flex; align-items: center; gap: 2px; border-radius: 3px; padding: 3px 4px; font-size: 6px; }
+.role-match-chip { background: #edf6ee; color: #497a51; }
+.role-gap-chip { background: #fbf2e9; color: #956e3f; }
+.role-no-gaps { background: #edf6ee; color: #497a51; }
+.skills-count-label { color: #96a096; font-size: 8px; }
+.proficiency-card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; }
+.proficiency-card { min-width: 0; border: 1px solid #e6ebe6; border-radius: 7px; background: #fff; padding: 11px 12px; transition: transform .15s ease, border-color .15s ease; }
+.proficiency-card:hover { transform: translateY(-1px); border-color: #ccdece; }
+.proficiency-card-top { display: flex; align-items: center; justify-content: space-between; gap: 5px; }
+.proficiency-category { overflow: hidden; color: #939d94; font-size: 7px; text-overflow: ellipsis; white-space: nowrap; }
+.proficiency-status { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 4px; border-radius: 8px; padding: 3px 5px; font-size: 6px; }
+.proficiency-status i { width: 5px; height: 5px; border-radius: 50%; }
+.status-strong { background: #edf6ee; color: #4a7e53; }
+.status-strong i { background: #4b9660; }
+.status-developing { background: #faf3e7; color: #927541; }
+.status-developing i { background: #c39b4b; }
+.proficiency-card h3 { overflow: hidden; margin: 10px 0 7px; color: #3f4f44; font: 700 11px 'Manrope', sans-serif; text-overflow: ellipsis; white-space: nowrap; }
+.proficiency-level-row { display: flex; align-items: center; justify-content: space-between; color: #7d8a7f; font-size: 8px; }
+.proficiency-level-row strong { color: #647966; font: 700 8px 'Manrope', sans-serif; }
+.proficiency-track { overflow: hidden; height: 5px; margin-top: 6px; border-radius: 5px; background: #edf1ed; }
+.proficiency-track i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #4a8558, #84ad82); }
+.proficiency-card.developing .proficiency-track i { background: linear-gradient(90deg, #b78d43, #ddc078); }
+.graph-empty-node { border: 1px dashed #dfe7df; border-radius: 6px; padding: 12px 8px; color: #929d94; font-size: 8px; line-height: 1.5; text-align: center; }
+.graph-loading { display: grid; min-height: 280px; grid-template-columns: repeat(4, minmax(0, 1fr)); align-content: center; gap: 10px; }
+.graph-loading span { height: 120px; border: 1px solid #e8ede8; border-radius: 8px; background: linear-gradient(100deg, #f0f3f0 35%, #f8faf8 50%, #f0f3f0 65%); background-size: 200% 100%; animation: graph-shimmer 1.2s infinite linear; }
+.graph-loading strong { grid-column: 1 / -1; color: #839086; font-size: 10px; text-align: center; }
+@keyframes graph-shimmer { to { background-position: -200% 0; } }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+
+@media (max-width: 1040px) {
+  .graph-summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .relationship-board { grid-template-columns: minmax(0, 1fr) 14px minmax(0, 1.25fr); }
+  .relationship-board > :nth-child(1) { grid-column: 1; grid-row: 1; }
+  .relationship-board > :nth-child(2) { grid-column: 2; grid-row: 1; }
+  .relationship-board > :nth-child(3) { grid-column: 3; grid-row: 1; }
+  .relationship-board > :nth-child(4) { grid-column: 2; grid-row: 2; transform: rotate(180deg); }
+  .relationship-board > :nth-child(5) { grid-column: 1; grid-row: 2; }
+  .relationship-board > :nth-child(6) { grid-column: 2; grid-row: 2; }
+  .relationship-board > :nth-child(7) { grid-column: 3; grid-row: 2; }
+  .proficiency-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 680px) {
+  .skill-graph-heading { align-items: flex-start; }
+  .graph-heading-badge { display: none; }
+  .skill-graph-heading h1 { font-size: 24px; }
+  .skill-graph-subtitle { max-width: 340px; line-height: 1.5; }
+  .graph-employee-toolbar { align-items: stretch; flex-direction: column; gap: 11px; padding: 12px; }
+  .employee-select-wrap { width: 100%; }
+  .graph-profile-details { width: 100%; margin: 4px 0 0 54px; }
+  .employee-profile-strip { flex-wrap: wrap; }
+  .graph-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .graph-section-heading { align-items: flex-start; flex-direction: column; }
+  .graph-legend { gap: 8px; }
+  .relationship-board { grid-template-columns: minmax(0, 1fr); gap: 7px; padding: 9px; }
+  .relationship-board > :nth-child(n) { grid-column: 1; grid-row: auto; }
+  .graph-stage { padding: 10px; }
+  .graph-stage-heading h3 { font-size: 9px; }
+  .graph-employee-node { grid-template-columns: 38px minmax(0, 1fr); justify-items: start; padding: 5px; text-align: left; }
+  .employee-node-avatar { grid-row: span 3; width: 36px; height: 36px; border-radius: 10px; font-size: 10px; }
+  .graph-employee-node > strong, .graph-employee-node > span:not(.employee-node-avatar), .graph-employee-node > small { align-self: end; }
+  .graph-flow-connector { height: 13px; }
+  .graph-flow-connector::before { top: 0; bottom: 0; left: 50%; width: 1px; height: auto; }
+  .graph-flow-connector svg:first-child { display: none; }
+  .graph-flow-connector svg:last-child { position: relative; z-index: 1; display: block; width: 14px; height: 14px; border-radius: 50%; background: #f8faf8; }
+  .graph-flow-connector:nth-of-type(4), .graph-flow-connector:nth-of-type(6) { transform: none !important; }
+  .skill-node-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-node-heading strong { font-size: 8px; }
+  .graph-project-node > p, .project-contribution { font-size: 8px; }
+  .project-contribution > span, .project-node-heading small, .project-skill-tags > span { font-size: 7px; }
+  .role-node-title > strong { font-size: 9px; }
+  .graph-role-node > small, .role-skill-caption, .role-match-chip, .role-gap-chip, .role-no-gaps { font-size: 7px; }
+  .proficiency-card-grid { grid-template-columns: 1fr; }
+  .proficiency-card { padding: 12px; }
+  .proficiency-card h3 { font-size: 12px; }
+}

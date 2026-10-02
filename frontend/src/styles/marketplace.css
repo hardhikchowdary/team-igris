@@ -1,0 +1,166 @@
+.marketplace-page { --market-ink: #26352b; --market-muted: #7d8980; --market-line: #e5ebe5; --market-green: #287b58; color: var(--market-ink); }
+.marketplace-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 20px; }
+.marketplace-heading h1 { margin-top: 7px; color: #29372e; font: 700 27px 'Manrope', sans-serif; }
+.marketplace-heading p { margin: 5px 0 0; color: #78847b; font-size: 12px; }
+.marketplace-heading-badge { display: inline-flex; align-items: center; gap: 7px; border: 1px solid #dfe9e0; border-radius: 5px; background: #f6faf6; padding: 7px 9px; color: #538062; font-size: 9px; font-weight: 600; }
+.marketplace-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; }
+.marketplace-kpi { display: flex; min-width: 0; align-items: center; gap: 9px; border: 1px solid #e6ebe6; border-radius: 7px; background: #fff; padding: 11px 12px; transition: transform .15s ease, box-shadow .15s ease; }
+.marketplace-kpi:hover { transform: translateY(-1px); box-shadow: 0 5px 14px rgb(34 69 42 / 5%); }
+.marketplace-kpi-icon { display: grid; width: 31px; height: 31px; flex: 0 0 auto; place-items: center; border-radius: 7px; }
+.marketplace-kpi-icon.mint { background: #eaf4eb; color: #4b8157; }
+.marketplace-kpi-icon.blue { background: #eaf2f5; color: #558093; }
+.marketplace-kpi-icon.yellow { background: #f8f2e5; color: #a17b3b; }
+.marketplace-kpi-icon.purple { background: #f0edf5; color: #777192; }
+.marketplace-kpi > div { display: grid; min-width: 0; gap: 2px; }
+.marketplace-kpi > div > span { overflow: hidden; color: #808b82; font-size: 8px; font-weight: 500; text-overflow: ellipsis; white-space: nowrap; }
+.marketplace-kpi > div > strong { color: #344238; font: 700 17px 'Manrope', sans-serif; }
+.marketplace-toolbar { display: grid; grid-template-columns: minmax(225px, .8fr) minmax(260px, 1.2fr); gap: 10px; margin-top: 13px; }
+.marketplace-employee-select { display: flex; min-width: 0; align-items: center; gap: 8px; border: 1px solid #e5ebe5; border-radius: 6px; background: #fff; padding: 7px 9px; }
+.marketplace-employee-select > span:first-child { flex: 0 0 auto; color: #78847b; font-size: 8px; }
+.marketplace-select-wrap { position: relative; display: flex; min-width: 0; height: 28px; flex: 1; align-items: center; border: 1px solid #e1e7e1; border-radius: 4px; }
+.marketplace-select-wrap select { width: 100%; height: 100%; appearance: none; border: 0; outline: 0; background: transparent; padding: 0 25px 0 7px; color: #46554a; font: 600 8px 'DM Sans', sans-serif; cursor: pointer; }
+.marketplace-select-wrap > svg { position: absolute; right: 6px; color: #8c968e; pointer-events: none; }
+.marketplace-search { display: flex; min-width: 0; height: 44px; align-items: center; gap: 8px; border: 1px solid #e3e9e3; border-radius: 6px; background: #fff; padding: 0 10px; color: #849087; }
+.marketplace-search:focus-within { border-color: #9fbea3; box-shadow: 0 0 0 3px rgb(69 127 81 / 8%); }
+.marketplace-search input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: #46554a; font: 400 10px 'DM Sans', sans-serif; }
+.marketplace-search input::placeholder { color: #a0a9a1; }
+.search-shortcut { flex: 0 0 auto; color: #a1aaa2; font-size: 6px; letter-spacing: .5px; }
+.marketplace-info { margin-top: 8px; color: #907444; font-size: 8px; }
+.marketplace-recommendations, .marketplace-browse { margin-top: 22px; }
+.marketplace-section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+.marketplace-eyebrow { display: block; margin-bottom: 4px; color: #8b978d; font-size: 7px; font-weight: 700; letter-spacing: .9px; }
+.marketplace-section-heading h2 { color: #344238; font: 700 16px 'Manrope', sans-serif; }
+.recommendation-count, .browse-result-count { color: #939d94; font-size: 8px; }
+.recommendation-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+.recommended-opportunity { display: grid; min-width: 0; grid-template-columns: 18px 30px minmax(0, 1fr) 45px 22px; align-items: center; gap: 7px; border: 1px solid #e6ebe6; border-radius: 7px; background: #fff; padding: 9px; transition: transform .15s ease, border-color .15s ease; }
+.recommended-opportunity:hover { transform: translateY(-1px); border-color: #cbdccb; }
+.recommendation-rank { color: #a2aba3; font: 600 7px 'Manrope', sans-serif; }
+.recommendation-icon { display: grid; width: 29px; height: 29px; place-items: center; border-radius: 7px; }
+.recommendation-icon.projects { background: #eaf2f5; color: #557f8e; }
+.recommendation-icon.jobs { background: #eaf4eb; color: #4b8157; }
+.recommendation-icon.courses { background: #f8f2e5; color: #a17b3b; }
+.recommendation-icon.mentorship { background: #f0edf5; color: #777192; }
+.recommendation-main { display: grid; min-width: 0; gap: 3px; }
+.recommendation-main > strong { overflow: hidden; color: #425046; font-size: 8px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+.recommendation-main > small { overflow: hidden; color: #919b92; font-size: 7px; text-overflow: ellipsis; white-space: nowrap; }
+.recommendation-skills { display: flex; gap: 3px; overflow: hidden; }
+.recommendation-skills i { overflow: hidden; border-radius: 3px; background: #f0f5f0; padding: 3px 4px; color: #68806c; font-size: 6px; font-style: normal; text-overflow: ellipsis; white-space: nowrap; }
+.opportunity-match { display: grid; min-width: 43px; justify-items: end; gap: 4px; }
+.opportunity-match-value { display: inline-flex; align-items: baseline; gap: 3px; color: #39794f; font: 700 12px 'Manrope', sans-serif; white-space: nowrap; }
+.opportunity-match-value small { color: #929c93; font: 700 5px 'DM Sans', sans-serif; letter-spacing: .5px; }
+.opportunity-match > i { overflow: hidden; width: 100%; height: 4px; border-radius: 4px; background: #edf1ed; }
+.opportunity-match > i > b { display: block; height: 100%; border-radius: inherit; background: #6fa578; }
+.opportunity-match.small { min-width: 41px; }
+.opportunity-match.small .opportunity-match-value { font-size: 10px; }
+.opportunity-match.small > i { height: 3px; }
+.recommendation-view { display: grid; width: 23px; height: 23px; place-items: center; border: 1px solid #e8ede8; border-radius: 5px; background: #fff; color: #829087; cursor: pointer; }
+.recommendation-view:hover { border-color: #cbddcc; color: #39794f; }
+.browse-heading { margin-bottom: 9px; }
+.marketplace-category-tabs { display: flex; gap: 4px; overflow-x: auto; border-bottom: 1px solid #e7ece7; }
+.marketplace-category-tabs button { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 6px; border: 0; border-bottom: 2px solid transparent; background: transparent; padding: 8px 9px 9px; color: #7a857c; font: 500 8px 'DM Sans', sans-serif; cursor: pointer; transition: color .15s ease, border-color .15s ease; }
+.marketplace-category-tabs button:hover { color: #35744d; }
+.marketplace-category-tabs button.active { border-bottom-color: #378153; color: #2f714a; font-weight: 700; }
+.marketplace-category-tabs button > span { display: grid; min-width: 16px; height: 16px; place-items: center; border-radius: 5px; background: #f0f3f0; color: #7f8b81; font-size: 7px; }
+.marketplace-category-tabs button.active > span { background: #e8f2e9; color: #4c8056; }
+.opportunity-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; margin-top: 10px; }
+.opportunity-card { display: flex; min-width: 0; min-height: 224px; flex-direction: column; border: 1px solid #e5ebe5; border-radius: 7px; background: #fff; padding: 11px; transition: border-color .16s ease, transform .16s ease, box-shadow .16s ease; }
+.opportunity-card:hover { transform: translateY(-2px); border-color: #cddfce; box-shadow: 0 7px 18px rgb(35 70 42 / 5%); }
+.opportunity-card-top { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+.opportunity-category { display: inline-flex; align-items: center; gap: 4px; border-radius: 8px; padding: 4px 6px; font-size: 7px; font-weight: 600; }
+.opportunity-category.projects { background: #eaf2f5; color: #557c8b; }
+.opportunity-category.jobs { background: #eaf4eb; color: #4c8056; }
+.opportunity-category.courses { background: #f8f2e5; color: #9d783c; }
+.opportunity-category.mentorship { background: #f0edf5; color: #777192; }
+.opportunity-card h3 { overflow: hidden; margin: 10px 0 5px; color: #37463b; font: 700 11px 'Manrope', sans-serif; text-overflow: ellipsis; white-space: nowrap; }
+.opportunity-description { display: -webkit-box; min-height: 32px; overflow: hidden; margin: 0; color: #828d84; font-size: 8px; line-height: 1.5; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.opportunity-skills { display: flex; min-height: 22px; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.opportunity-skills span { border: 1px solid #e8ede8; border-radius: 4px; background: #fafcfa; padding: 4px 5px; color: #7a867c; font-size: 6px; }
+.opportunity-skills span.has-skill { border-color: #d8e8da; background: #f0f7f0; color: #4e7a54; }
+.opportunity-meta { display: grid; gap: 5px; margin-top: auto; border-top: 1px solid #eff2ef; padding-top: 8px; }
+.opportunity-meta > span { display: flex; min-width: 0; align-items: center; gap: 5px; overflow: hidden; color: #828d84; font-size: 7px; text-overflow: ellipsis; white-space: nowrap; }
+.opportunity-meta svg { flex: 0 0 auto; color: #97a298; }
+.view-opportunity-button { display: flex; min-height: 30px; align-items: center; justify-content: space-between; gap: 7px; margin-top: 9px; border: 1px solid #dfe9e0; border-radius: 5px; background: #f8fbf8; padding: 0 8px; color: #36744e; font: 600 8px 'DM Sans', sans-serif; cursor: pointer; transition: background .15s ease, border-color .15s ease; }
+.view-opportunity-button:hover { border-color: #b9d4bc; background: #edf6ee; }
+.marketplace-empty { display: grid; justify-items: center; margin-top: 10px; border: 1px dashed #dfe7df; border-radius: 7px; padding: 28px 14px; text-align: center; }
+.marketplace-empty > span { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 50%; background: #edf5ee; color: #61856a; }
+.marketplace-empty > strong { margin-top: 8px; color: #526157; font: 700 10px 'Manrope', sans-serif; }
+.marketplace-empty > p { margin: 4px 0 8px; color: #929b93; font-size: 8px; }
+.marketplace-empty > button { border: 0; background: transparent; color: #39774f; font-size: 8px; font-weight: 600; cursor: pointer; }
+.marketplace-modal-backdrop { position: fixed; inset: 0; z-index: 6; display: flex; justify-content: flex-end; background: rgb(23 35 27 / 40%); animation: marketplace-fade .16s ease both; }
+@keyframes marketplace-fade { from { opacity: 0; } to { opacity: 1; } }
+.marketplace-modal { width: min(500px, 100%); height: 100%; overflow-y: auto; background: #fff; padding: 20px 23px 24px; box-shadow: -12px 0 35px rgb(22 39 27 / 15%); animation: marketplace-slide .2s ease both; }
+@keyframes marketplace-slide { from { transform: translateX(13px); opacity: .8; } to { transform: translateX(0); opacity: 1; } }
+.marketplace-modal-top { display: flex; align-items: center; justify-content: space-between; }
+.marketplace-modal-close { display: grid; width: 31px; height: 31px; place-items: center; border: 1px solid #e2e8e2; border-radius: 6px; background: #fff; color: #79857b; cursor: pointer; }
+.marketplace-modal-close:hover { background: #f3f7f3; color: #3a704b; }
+.marketplace-modal-title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 24px; }
+.marketplace-modal-title-row h2 { margin-top: 4px; color: #2d3b31; font: 700 19px 'Manrope', sans-serif; }
+.marketplace-modal-title-row .opportunity-match { min-width: 70px; }
+.marketplace-modal-title-row .opportunity-match-value { font-size: 19px; }
+.marketplace-modal-title-row .opportunity-match-value small { font-size: 7px; }
+.marketplace-modal-description { margin: 12px 0 0; color: #77847a; font-size: 10px; line-height: 1.65; }
+.marketplace-modal-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; margin-top: 15px; }
+.marketplace-modal-facts > span { display: grid; align-content: start; gap: 4px; border: 1px solid #e8ede8; border-radius: 6px; padding: 9px; color: #849087; }
+.marketplace-modal-facts > span > svg { color: #709078; }
+.marketplace-modal-facts strong { overflow: hidden; color: #536157; font-size: 8px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.marketplace-modal-facts small { color: #9aa39b; font-size: 7px; }
+.marketplace-modal-section { margin-top: 18px; }
+.marketplace-modal-section h3 { margin: 0 0 8px; color: #455349; font: 700 11px 'Manrope', sans-serif; }
+.modal-skill-list { display: flex; flex-wrap: wrap; gap: 5px; }
+.modal-skill-list > span { display: inline-flex; align-items: center; gap: 4px; border-radius: 4px; padding: 5px 7px; font-size: 8px; }
+.modal-skill-list .modal-skill-present { background: #edf6ee; color: #4a7c52; }
+.modal-skill-list .modal-skill-missing { background: #fbf2e9; color: #966f41; }
+.marketplace-match-detail { margin-top: 16px; border: 1px solid #e4ebe4; border-radius: 7px; background: #f9fbf9; padding: 11px; }
+.marketplace-match-detail-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.marketplace-match-detail-heading > span { overflow: hidden; color: #849086; font-size: 7px; font-weight: 700; letter-spacing: .6px; text-overflow: ellipsis; white-space: nowrap; }
+.marketplace-match-detail-heading > strong { color: #39794f; font: 700 15px 'Manrope', sans-serif; }
+.marketplace-match-track { overflow: hidden; height: 5px; margin-top: 7px; border-radius: 5px; background: #e9eee9; }
+.marketplace-match-track > i { display: block; height: 100%; border-radius: inherit; background: #70a378; }
+.match-detail-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; margin-top: 11px; }
+.match-detail-columns > div { display: grid; align-content: start; gap: 5px; }
+.match-detail-columns h4 { margin: 0 0 2px; color: #758177; font-size: 7px; font-weight: 700; text-transform: uppercase; }
+.match-detail-columns > div > span { display: flex; align-items: center; gap: 4px; color: #68806c; font-size: 8px; }
+.match-detail-columns > div > span svg { color: #50865d; }
+.match-detail-columns .match-detail-gap { color: #927348; }
+.match-detail-columns .match-detail-gap > span { color: #be9250; }
+.match-detail-columns > div > small { color: #9aa39b; font-size: 8px; }
+.marketplace-demo-note { margin: 14px 0 0; color: #8b968d; font-size: 8px; line-height: 1.5; }
+.opportunity-saved-message { display: flex; align-items: center; gap: 6px; margin-top: 13px; border: 1px solid #d9e8da; border-radius: 5px; background: #f0f7f0; padding: 8px 9px; color: #4e7c56; font-size: 8px; }
+.marketplace-modal-actions { display: flex; justify-content: flex-end; gap: 7px; margin-top: 18px; border-top: 1px solid #edf0ed; padding-top: 12px; }
+.marketplace-secondary-button, .marketplace-explore-button { display: inline-flex; min-height: 33px; align-items: center; justify-content: center; gap: 6px; border-radius: 5px; padding: 0 11px; font: 600 8px 'DM Sans', sans-serif; cursor: pointer; }
+.marketplace-secondary-button { border: 1px solid #e1e7e1; background: #fff; color: #718075; }
+.marketplace-explore-button { border: 1px solid #287b58; background: #287b58; color: #fff; }
+.marketplace-explore-button:hover { background: #206b4b; }
+
+@media (max-width: 950px) {
+  .marketplace-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .opportunity-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .recommendation-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 680px) {
+  .marketplace-heading { align-items: flex-start; }
+  .marketplace-heading h1 { font-size: 24px; }
+  .marketplace-heading-badge { display: none; }
+  .marketplace-toolbar { grid-template-columns: 1fr; }
+  .marketplace-employee-select { min-height: 42px; }
+  .marketplace-select-wrap { max-width: 65%; }
+  .marketplace-search { min-height: 42px; }
+  .marketplace-section-heading { align-items: flex-start; }
+  .marketplace-section-heading h2 { font-size: 14px; }
+  .opportunity-grid { grid-template-columns: 1fr; }
+  .opportunity-card { min-height: 205px; }
+  .marketplace-modal { padding: 17px 15px 21px; }
+}
+@media (max-width: 390px) {
+  .marketplace-kpis { gap: 6px; }
+  .marketplace-kpi { gap: 6px; padding: 8px; }
+  .marketplace-kpi-icon { width: 27px; height: 27px; }
+  .marketplace-kpi > div > span { font-size: 7px; }
+  .marketplace-kpi > div > strong { font-size: 15px; }
+  .search-shortcut { display: none; }
+  .recommended-opportunity { grid-template-columns: 15px 27px minmax(0, 1fr) 40px 20px; gap: 5px; padding: 7px; }
+  .recommendation-icon { width: 27px; height: 27px; }
+  .recommendation-main > strong { font-size: 7px; }
+  .recommendation-skills i { font-size: 5px; }
+  .marketplace-modal-facts { grid-template-columns: 1fr; }
+}

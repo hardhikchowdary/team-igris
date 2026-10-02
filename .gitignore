@@ -1,0 +1,43 @@
+# Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Node dependencies and build output
+node_modules/
+frontend/node_modules/
+dist/
+build/
+frontend/dist/
+frontend/build/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Local SQLite databases and transient journal files
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+*.sqlite-shm
+*.sqlite-wal
+
+# Logs, editor state, and OS files
+*.log
+.idea/
+.vscode/.history/
+.vscode/*.log
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

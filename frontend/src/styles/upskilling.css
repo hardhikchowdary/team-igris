@@ -1,0 +1,203 @@
+.upskilling-page { --up-ink: #26352b; --up-muted: #7f8a81; --up-line: #e5ebe5; --up-green: #287b58; color: var(--up-ink); }
+.upskilling-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 19px; }
+.upskilling-heading h1 { margin-top: 7px; color: #29372e; font: 700 27px 'Manrope', sans-serif; }
+.upskilling-heading p { margin: 5px 0 0; color: #78847b; font-size: 12px; }
+.upskilling-heading-mark { display: inline-flex; align-items: center; gap: 7px; border: 1px solid #dfe9e0; border-radius: 5px; background: #f6faf6; padding: 7px 9px; color: #538062; font-size: 9px; font-weight: 600; }
+.upskilling-error { display: flex; align-items: center; gap: 9px; margin-bottom: 13px; border: 1px solid #f1d9ce; border-radius: 6px; background: #fff8f5; padding: 10px 12px; color: #975638; font-size: 10px; }
+.upskilling-error button { margin-left: auto; border: 1px solid #e8c7b8; border-radius: 4px; background: #fff; padding: 5px 8px; color: #925437; font-size: 9px; cursor: pointer; }
+.upskilling-selectors { display: grid; grid-template-columns: minmax(0, 1fr) 22px minmax(0, 1fr); align-items: center; gap: 11px; border: 1px solid #e5ebe5; border-radius: 8px; background: #fff; padding: 12px; }
+.upskilling-selector { display: grid; min-width: 0; grid-template-columns: 32px minmax(95px, 1fr) minmax(150px, 1.15fr); align-items: center; gap: 9px; }
+.upskilling-selector-icon { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 7px; background: #eaf4eb; color: #4a8056; }
+.upskilling-selector-icon.target { background: #eaf2f5; color: #548092; }
+.upskilling-selector-copy { display: grid; min-width: 0; gap: 3px; }
+.upskilling-selector-copy strong { color: #425047; font-size: 9px; font-weight: 700; }
+.upskilling-selector-copy small { overflow: hidden; color: #9aa39b; font-size: 7px; text-overflow: ellipsis; white-space: nowrap; }
+.upskilling-select-wrap { position: relative; display: flex; min-width: 0; height: 34px; align-items: center; border: 1px solid #e0e6e0; border-radius: 5px; }
+.upskilling-select-wrap select { width: 100%; height: 100%; appearance: none; border: 0; outline: 0; background: transparent; padding: 0 27px 0 8px; color: #46554a; font: 600 9px 'DM Sans', sans-serif; cursor: pointer; }
+.upskilling-select-wrap svg { position: absolute; right: 8px; color: #8b968c; pointer-events: none; }
+.selector-connector { display: grid; place-items: center; color: #9eb4a1; }
+.upskilling-employee-summary { display: flex; min-height: 64px; align-items: center; gap: 11px; margin-top: 11px; border: 1px solid #e1e9e1; border-radius: 8px; background: linear-gradient(100deg, #f0f7f0, #fff 64%); padding: 11px 13px; }
+.upskilling-employee-avatar { display: grid; width: 39px; height: 39px; flex: 0 0 auto; place-items: center; border: 1px solid #d7e6d9; border-radius: 11px; background: #e7f1e8; color: #438055; font: 700 11px 'Manrope', sans-serif; }
+.upskilling-employee-main { min-width: 0; }
+.upskilling-employee-title { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+.upskilling-employee-title h2 { color: #304035; font: 700 13px 'Manrope', sans-serif; }
+.upskilling-employee-main > p { margin: 3px 0 0; color: #7e8a80; font-size: 8px; }
+.upskilling-employee-main > p span { margin: 0 3px; color: #bac3bb; }
+.upskilling-availability { display: inline-flex; align-items: center; gap: 4px; border-radius: 9px; background: #f8f1e5; padding: 3px 6px; color: #92763f; font-size: 7px; }
+.upskilling-availability i { width: 5px; height: 5px; border-radius: 50%; background: #c7a250; }
+.upskilling-availability.available { background: #eaf5ec; color: #477c51; }
+.upskilling-availability.available i { background: #4f9d66; }
+.upskilling-employee-meta { display: flex; flex-wrap: wrap; gap: 11px; margin-left: auto; color: #77847a; font-size: 8px; }
+.upskilling-employee-meta span { display: inline-flex; align-items: center; gap: 4px; }
+.upskilling-employee-meta svg { color: #93a095; }
+.upskilling-empty { display: grid; justify-items: center; border: 1px dashed #dfe7df; border-radius: 7px; background: #fbfcfb; padding: 20px 14px; text-align: center; }
+.upskilling-empty > span { display: grid; width: 34px; height: 34px; place-items: center; border-radius: 9px; background: #edf5ee; color: #578162; }
+.upskilling-empty > strong { margin-top: 8px; color: #536157; font: 700 10px 'Manrope', sans-serif; }
+.upskilling-empty > p { max-width: 350px; margin: 5px 0 0; color: #909a91; font-size: 8px; line-height: 1.5; }
+.upskilling-employee-summary > .upskilling-empty { flex: 1; padding: 10px; }
+.upskilling-overview-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(250px, .75fr); align-items: stretch; gap: 12px; margin-top: 17px; }
+.current-skills-panel, .compatibility-panel { min-width: 0; border: 1px solid #e5ebe5; border-radius: 8px; background: #fff; padding: 14px; }
+.upskilling-section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 11px; }
+.upskilling-section-heading > div > span, .upskilling-eyebrow { display: block; margin-bottom: 4px; color: #8b978d; font-size: 7px; font-weight: 700; letter-spacing: .9px; }
+.upskilling-section-heading h2 { color: #344238; font: 700 15px 'Manrope', sans-serif; }
+.upskilling-section-heading > p { margin: 0; color: #929c93; font-size: 8px; text-align: right; }
+.current-skill-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+.current-skill-card { min-width: 0; border: 1px solid #e8ede8; border-radius: 6px; background: #fcfdfc; padding: 9px; }
+.current-skill-card.role-required { border-color: #d7e6d8; background: #fbfdfb; }
+.current-skill-top { display: flex; align-items: center; justify-content: space-between; gap: 5px; }
+.skill-category-label { overflow: hidden; color: #99a199; font-size: 7px; text-overflow: ellipsis; white-space: nowrap; }
+.skill-status-pill { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 4px; border-radius: 8px; padding: 3px 5px; font-size: 6px; }
+.skill-status-pill i { width: 5px; height: 5px; border-radius: 50%; }
+.skill-status-pill.strong { background: #edf6ee; color: #4a7e53; }
+.skill-status-pill.strong i { background: #4b9660; }
+.skill-status-pill.developing { background: #faf3e7; color: #927541; }
+.skill-status-pill.developing i { background: #c39b4b; }
+.current-skill-card h3 { overflow: hidden; margin: 7px 0 6px; color: #46554a; font: 700 10px 'Manrope', sans-serif; text-overflow: ellipsis; white-space: nowrap; }
+.current-skill-level { display: flex; align-items: center; justify-content: space-between; color: #859087; font-size: 7px; }
+.current-skill-level strong { color: #637666; font: 700 8px 'Manrope', sans-serif; }
+.current-skill-track, .compatibility-track { overflow: hidden; height: 5px; border-radius: 5px; background: #edf1ed; }
+.current-skill-track { margin-top: 5px; }
+.current-skill-track > i, .compatibility-track > i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #bc9149, #ddc17c); transition: width .25s ease; }
+.current-skill-track > i.strong { background: linear-gradient(90deg, #488458, #8ab386); }
+.required-skill-note { display: inline-flex; align-items: center; gap: 3px; margin-top: 6px; color: #5d8663; font-size: 6px; }
+.compatibility-panel { background: linear-gradient(145deg, #f1f7f1, #fff 62%); }
+.compatibility-panel-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.compatibility-panel-top .upskilling-section-heading { margin-bottom: 0; }
+.compatibility-target-icon { display: grid; width: 29px; height: 29px; place-items: center; border-radius: 7px; background: #e8f2e9; color: #4d8058; }
+.compatibility-score-row { display: flex; align-items: center; gap: 9px; margin-top: 14px; }
+.compatibility-current-score { color: #34764d; font: 800 36px 'Manrope', sans-serif; line-height: 1; }
+.compatibility-current-score small { margin-left: 1px; font-size: 18px; }
+.compatibility-score-caption { color: #839187; font-size: 7px; font-weight: 700; letter-spacing: .7px; line-height: 1.5; }
+.compatibility-track { height: 7px; margin-top: 10px; background: #e8eee8; }
+.compatibility-track > i { background: linear-gradient(90deg, #438456, #7eaa7b); }
+.compatibility-foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 7px; color: #829087; font-size: 7px; }
+.compatibility-foot strong { color: #5e7062; font-size: 7px; }
+.compatibility-status-line { display: flex; align-items: center; gap: 5px; margin-top: 11px; color: #75837a; font-size: 8px; }
+.coverage-dot { width: 6px; height: 6px; border-radius: 50%; background: #d0a454; }
+.role-requirement-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.role-requirement-chips > span { display: inline-flex; align-items: center; gap: 3px; border-radius: 4px; padding: 4px 5px; font-size: 7px; }
+.role-requirement-chips .requirement-present { background: #eaf5eb; color: #4b7e54; }
+.role-requirement-chips .requirement-missing { background: #fbf2e9; color: #946c3e; }
+.skill-gap-section, .learning-section, .roadmap-section, .other-roles-section { margin-top: 22px; }
+.skill-gap-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.skill-gap-card { min-width: 0; border: 1px solid #e8ece8; border-left: 3px solid #d0a24d; border-radius: 6px; background: #fff; padding: 10px 11px; }
+.skill-gap-card.priority-high { border-left-color: #c47f5d; }
+.skill-gap-card.priority-medium { border-left-color: #d0a24d; }
+.skill-gap-top { display: flex; align-items: center; justify-content: space-between; gap: 5px; }
+.priority-badge { display: inline-flex; align-items: center; gap: 4px; border-radius: 9px; padding: 4px 6px; font-size: 7px; font-weight: 600; }
+.priority-badge i { width: 5px; height: 5px; border-radius: 50%; }
+.priority-badge.high { background: #fbefea; color: #9e644a; }
+.priority-badge.high i { background: #c47758; }
+.priority-badge.medium { background: #fbf4e7; color: #94743f; }
+.priority-badge.medium i { background: #c39a4b; }
+.priority-badge.low { background: #eff3ef; color: #738176; }
+.priority-badge.low i { background: #97a499; }
+.gap-state-label { color: #9aa39a; font-size: 7px; }
+.skill-gap-card h3 { margin: 8px 0 5px; color: #455449; font: 700 11px 'Manrope', sans-serif; }
+.skill-gap-card > p { min-height: 29px; margin: 0; color: #869187; font-size: 8px; line-height: 1.5; }
+.gap-recommendation { display: flex; align-items: center; gap: 5px; margin-top: 8px; border-top: 1px solid #eff2ef; padding-top: 7px; color: #67816b; font-size: 7px; }
+.gap-recommendation svg { flex: 0 0 auto; color: #79967c; }
+.no-skill-gaps { display: flex; align-items: center; gap: 8px; border: 1px solid #dce9dd; border-radius: 6px; background: #f3f8f3; padding: 12px; color: #5e8064; font-size: 8px; }
+.learning-complete { margin-top: 11px; }
+.learning-heading-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; }
+.learning-path-duration { display: inline-flex; align-items: center; gap: 5px; margin-bottom: 12px; border: 1px solid #e5ebe5; border-radius: 5px; background: #fff; padding: 5px 7px; color: #7f8b81; font-size: 7px; white-space: nowrap; }
+.learning-card-list { display: grid; gap: 8px; }
+.learning-card { display: grid; grid-template-columns: 31px minmax(0, 1fr); gap: 9px; border: 1px solid #e5ebe5; border-radius: 7px; background: #fff; padding: 11px; }
+.learning-card-step { display: grid; grid-template-rows: 24px 1fr; justify-items: center; }
+.learning-card-step > span { display: grid; width: 24px; height: 24px; place-items: center; border: 1px solid #dce9dd; border-radius: 7px; background: #eff6ef; color: #4c7e55; font: 700 8px 'Manrope', sans-serif; }
+.learning-card-step > i { width: 1px; min-height: 100%; margin-top: 4px; background: #e5ece5; }
+.learning-card:last-child .learning-card-step > i { display: none; }
+.learning-card-body { min-width: 0; }
+.learning-card-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.learning-skill-name { color: #435247; font: 700 9px 'Manrope', sans-serif; }
+.learning-duration { display: inline-flex; align-items: center; gap: 3px; margin-left: auto; color: #89958b; font-size: 7px; }
+.learning-card h3 { margin: 8px 0 5px; color: #344238; font: 700 11px 'Manrope', sans-serif; }
+.learning-why { display: grid; gap: 3px; margin: 0; color: #7e8a80; font-size: 8px; line-height: 1.5; }
+.learning-why strong { color: #66766a; font-size: 7px; }
+.learning-card-bottom { display: flex; align-items: center; justify-content: space-between; gap: 9px; margin-top: 8px; border-top: 1px solid #eff2ef; padding-top: 7px; color: #9aa39b; font-size: 7px; }
+.learning-card-bottom button { display: inline-flex; align-items: center; gap: 4px; border: 0; background: transparent; padding: 3px 0 3px 5px; color: #34764e; font: 600 8px 'DM Sans', sans-serif; cursor: pointer; }
+.learning-card-bottom button:hover { color: #1e5e3b; }
+.learning-steps { display: grid; gap: 6px; margin: 9px 0 1px; border-radius: 5px; background: #f5f8f5; padding: 10px 11px; list-style: none; }
+.learning-steps li { display: flex; align-items: flex-start; gap: 6px; color: #68786b; font-size: 8px; line-height: 1.4; }
+.learning-steps svg { flex: 0 0 auto; color: #5b8a63; }
+.practice-project-card { display: flex; align-items: center; gap: 10px; border: 1px solid #dfe9e0; border-radius: 7px; background: #f4f8f4; padding: 12px; }
+.practice-project-icon { display: grid; width: 32px; height: 32px; flex: 0 0 auto; place-items: center; border-radius: 8px; background: #e6f0e7; color: #4a7e56; }
+.practice-project-card > div { min-width: 0; }
+.practice-project-overline { color: #839287; font-size: 6px; font-weight: 700; letter-spacing: .8px; }
+.practice-project-card h3 { margin: 3px 0; color: #435348; font: 700 9px 'Manrope', sans-serif; }
+.practice-project-card p { margin: 0; color: #879288; font-size: 7px; line-height: 1.5; }
+.practice-duration { flex: 0 0 auto; margin-left: auto; color: #75857a; font-size: 7px; }
+.expected-section { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, .85fr); align-items: center; gap: 20px; margin-top: 20px; border: 1px solid #dce8dd; border-radius: 8px; background: linear-gradient(105deg, #edf6ee, #f8fbf8 55%, #fff); padding: 15px 17px; }
+.expected-copy h2 { color: #34463a; font: 700 14px 'Manrope', sans-serif; }
+.expected-copy p { margin: 4px 0 0; color: #849187; font-size: 8px; }
+.expected-journey { display: flex; align-items: center; justify-content: flex-end; gap: 11px; }
+.expected-score { display: grid; justify-items: center; gap: 2px; }
+.expected-score > span { color: #87938a; font-size: 6px; font-weight: 700; letter-spacing: .7px; }
+.expected-score > strong { color: #5b7160; font: 700 20px 'Manrope', sans-serif; }
+.expected-score.future > strong { color: #31764d; }
+.expected-score > small { color: #a1aaa2; font-size: 6px; }
+.expected-arrow { display: grid; justify-items: center; gap: 3px; color: #83a088; }
+.expected-arrow > span { color: #89978c; font-size: 6px; }
+.roadmap-track { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0; border: 1px solid #e6ebe6; border-radius: 7px; background: #fff; padding: 14px 10px 11px; }
+.roadmap-step { position: relative; display: grid; min-width: 0; justify-items: center; gap: 5px; padding: 0 5px; text-align: center; }
+.roadmap-step:not(:last-child)::after { position: absolute; top: 15px; right: -50%; left: 50%; height: 1px; background: #e3eae3; content: ''; }
+.roadmap-node { position: relative; z-index: 1; display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid #e2e9e2; border-radius: 50%; background: #f8faf8; color: #849187; }
+.roadmap-step.complete .roadmap-node { border-color: #d7e8d8; background: #edf6ee; color: #4c8257; }
+.roadmap-step.active .roadmap-node { border-color: #c9dfcb; background: #e9f4ea; color: #30764c; box-shadow: 0 0 0 4px #f2f8f2; }
+.roadmap-step.target .roadmap-node { border-color: #d6e5e9; background: #eef5f7; color: #548091; }
+.roadmap-number { color: #a3aca4; font-size: 6px; font-weight: 700; letter-spacing: .5px; }
+.roadmap-step > strong { overflow: hidden; width: 100%; color: #59675c; font-size: 7px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.roadmap-step > small { overflow: hidden; width: 100%; color: #9ba49c; font-size: 6px; line-height: 1.35; text-overflow: ellipsis; }
+.other-role-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.other-role-card { display: grid; min-width: 0; grid-template-columns: 29px minmax(0, 1fr) auto; align-items: center; gap: 8px; border: 1px solid #e6ebe6; border-radius: 6px; background: #fff; padding: 9px; }
+.other-role-icon { display: grid; width: 28px; height: 28px; place-items: center; border-radius: 7px; background: #eaf2f5; color: #578193; }
+.other-role-info { display: grid; min-width: 0; gap: 3px; }
+.other-role-info > strong { overflow: hidden; color: #4a594d; font-size: 8px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+.other-role-info > small { overflow: hidden; color: #9aa39b; font-size: 7px; text-overflow: ellipsis; white-space: nowrap; }
+.other-role-score { color: #477c53; font: 700 12px 'Manrope', sans-serif; }
+.other-role-track { overflow: hidden; height: 4px; grid-column: 1 / -1; border-radius: 4px; background: #edf1ed; }
+.other-role-track > i { display: block; height: 100%; border-radius: inherit; background: #72a578; }
+.upskilling-loading { display: grid; min-height: 240px; grid-template-columns: repeat(3, minmax(0, 1fr)); align-content: center; gap: 10px; }
+.upskilling-loading span { height: 100px; border: 1px solid #e8ede8; border-radius: 8px; background: linear-gradient(100deg, #f0f3f0 35%, #f8faf8 50%, #f0f3f0 65%); background-size: 200% 100%; animation: upskilling-shimmer 1.2s infinite linear; }
+.upskilling-loading strong { grid-column: 1 / -1; color: #839086; font-size: 9px; text-align: center; }
+@keyframes upskilling-shimmer { to { background-position: -200% 0; } }
+
+@media (max-width: 980px) {
+  .upskilling-selector { grid-template-columns: 30px minmax(0, 1fr); }
+  .upskilling-select-wrap { grid-column: 1 / -1; }
+  .upskilling-overview-grid { grid-template-columns: minmax(0, 1.1fr) minmax(220px, .9fr); }
+  .skill-gap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .roadmap-track { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 14px; }
+  .roadmap-step:nth-child(3)::after { display: none; }
+}
+@media (max-width: 680px) {
+  .upskilling-heading { align-items: flex-start; }
+  .upskilling-heading h1 { font-size: 23px; }
+  .upskilling-heading-mark { display: none; }
+  .upskilling-selectors { grid-template-columns: 1fr; gap: 8px; }
+  .upskilling-selector { grid-template-columns: 30px minmax(0, 1fr); }
+  .upskilling-select-wrap { grid-column: 2; }
+  .selector-connector { height: 12px; transform: rotate(90deg); }
+  .upskilling-employee-summary { flex-wrap: wrap; }
+  .upskilling-employee-meta { width: 100%; margin-left: 50px; }
+  .upskilling-employee-summary > .upskilling-empty { flex-basis: 100%; }
+  .upskilling-overview-grid { grid-template-columns: 1fr; }
+  .current-skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .skill-gap-grid { grid-template-columns: 1fr; }
+  .skill-gap-card > p { min-height: auto; }
+  .expected-section { grid-template-columns: 1fr; gap: 14px; }
+  .expected-journey { justify-content: center; }
+  .roadmap-track { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px 4px; }
+  .roadmap-step:nth-child(3)::after { display: block; }
+  .roadmap-step:nth-child(even)::after { display: none; }
+  .other-role-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 400px) {
+  .upskilling-section-heading { align-items: flex-start; flex-direction: column; }
+  .upskilling-section-heading > p { text-align: left; }
+  .current-skill-grid { grid-template-columns: 1fr; }
+  .learning-heading-row { align-items: flex-start; flex-direction: column; }
+  .learning-path-duration { margin: -5px 0 10px; }
+  .practice-project-card { align-items: flex-start; }
+  .practice-duration { padding-top: 17px; }
+}

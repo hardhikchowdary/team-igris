@@ -1,0 +1,98 @@
+:root {
+  --hrm-green: #287b58;
+  --hrm-green-dark: #206b4b;
+  --hrm-green-soft: #eaf4ed;
+  --hrm-border: #e3e9e3;
+  --hrm-shadow: 0 7px 18px rgb(35 70 42 / 6%);
+}
+
+button, a, select, input { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid #6a9b72; outline-offset: 2px; }
+button, a { transition-timing-function: ease; }
+::selection { background: #dcebdd; color: #244332; }
+
+.sidebar { border-color: #e2e8e2; box-shadow: 2px 0 12px rgb(34 65 42 / 2%); }
+.brand { min-height: 35px; }
+.brand-copy { display: grid; gap: 1px; }
+.brand-copy strong { color: #25372b; font: 800 14px 'Manrope', sans-serif; line-height: 1.15; }
+.brand-copy small { color: #819087; font-size: 8px; font-weight: 500; }
+.workspace-label { margin-top: 40px; }
+.nav-link { border-left: 2px solid transparent; }
+.nav-link.active { border-left-color: var(--hrm-green); padding-left: 9px; }
+.nav-link.active svg { color: var(--hrm-green); }
+.topbar { border-color: #e3e9e3; }
+.page-content { width: 100%; }
+.api-status { box-shadow: 0 1px 3px rgb(33 58 39 / 3%); }
+
+.dashboard-kpi, .dashboard-panel, .candidate-card, .stat-card, .opportunity-card, .dashboard-candidate-modal, .profile-modal { border-color: #e2e8e2; }
+.dashboard-kpi-label { font-size: 10px; }
+.dashboard-kpi-note { font-size: 9px; }
+.panel-heading h3 { font-size: 12px; }
+.panel-heading p { font-size: 9px; }
+.skill-bar-top > span, .coverage-person-info > strong, .available-person > div > strong { font-size: 10px; }
+.skill-bar-top small, .coverage-person-info > span, .available-person > div > span { font-size: 9px; }
+.activity-copy strong { font-size: 9px; }
+.activity-copy span, .activity-item time { font-size: 8px; }
+.quick-action-copy strong { font-size: 9px; }
+.quick-action-copy small { font-size: 8px; }
+
+.search-form-heading p, .form-hint, .search-selection-note, .candidate-meta { font-size: 11px; }
+.skill-option { font-size: 11px; }
+.candidate-group-label { font-size: 9px; }
+.matched-tag, .missing-tag, .complete-tag { font-size: 10px; }
+.matched-tag small { font-size: 9px; }
+.project-evidence strong, .project-evidence small { font-size: 10px; }
+.candidate-explanation p { font-size: 11px; }
+.score-breakdown span { font-size: 8px; }
+.score-breakdown b { font-size: 9px; }
+.evidence-factor > div, .evidence-skill-chips > span, .evidence-gap-list > div > span, .evidence-gap-list > div > small, .evidence-project > p { font-size: 9px; }
+
+.graph-stage-heading h3 { font-size: 9px; }
+.graph-profile-main > p, .graph-profile-details > span { font-size: 10px; }
+.graph-skill-node-copy strong { font-size: 9px; }
+.graph-skill-node-copy small, .graph-skill-percent { font-size: 8px; }
+.project-node-heading strong { font-size: 8px; }
+.graph-project-node > p, .project-contribution { font-size: 8px; }
+.project-skill-tags > span { font-size: 7px; }
+.graph-role-node > small, .role-match-chip, .role-gap-chip, .role-no-gaps { font-size: 7px; }
+.proficiency-category, .proficiency-status, .proficiency-level-row { font-size: 8px; }
+.proficiency-card h3 { font-size: 12px; }
+
+.upskilling-selector-copy strong, .current-skill-level, .compatibility-foot, .compatibility-status-line { font-size: 9px; }
+.current-skill-card h3 { font-size: 11px; }
+.skill-status-pill, .priority-badge, .learning-card-bottom, .learning-duration { font-size: 8px; }
+.skill-gap-card h3, .practice-project-card h3 { font-size: 12px; }
+.skill-gap-card > p, .learning-why, .learning-steps li, .practice-project-card p { font-size: 9px; }
+.roadmap-step > strong { font-size: 8px; }
+.roadmap-step > small { font-size: 7px; }
+.other-role-info > strong { font-size: 9px; }
+
+.marketplace-kpi > div > span { font-size: 9px; }
+.marketplace-employee-select > span:first-child, .marketplace-select-wrap select { font-size: 9px; }
+.recommendation-main > strong, .opportunity-card h3 { font-size: 10px; }
+.recommendation-main > small, .opportunity-meta > span, .opportunity-description { font-size: 9px; }
+.recommendation-skills i, .opportunity-skills span { font-size: 7px; }
+.marketplace-category-tabs button { font-size: 9px; }
+.marketplace-category-tabs button > span { font-size: 8px; }
+.marketplace-modal-description { font-size: 11px; }
+.marketplace-modal-facts strong { font-size: 9px; }
+.modal-skill-list > span, .match-detail-columns > div > span, .marketplace-demo-note { font-size: 9px; }
+
+@media (max-width: 680px) {
+  .sidebar { padding: 10px 10px 8px; }
+  .brand { padding: 0 4px 9px; }
+  .brand-copy strong { font-size: 13px; }
+  .workspace-label, .sidebar-bottom { display: none; }
+  .navigation { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 3px; overflow: visible; padding: 0; }
+  .nav-link { min-width: 0; min-height: 48px; flex-direction: column; justify-content: center; gap: 4px; border-left: 0; border-bottom: 2px solid transparent; border-radius: 6px 6px 0 0; padding: 4px 2px 5px; font-size: 8px; line-height: 1.15; text-align: center; white-space: normal; }
+  .nav-link.active { border-left-color: transparent; border-bottom-color: var(--hrm-green); padding-left: 2px; }
+  .nav-link svg { width: 16px; height: 16px; flex: 0 0 auto; }
+  .nav-link > span { max-width: 100%; overflow-wrap: anywhere; }
+  .topbar { height: 46px; }
+  .page-content { padding: 24px 15px 34px; }
+  .profile-modal, .marketplace-modal, .dashboard-candidate-modal { max-width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
